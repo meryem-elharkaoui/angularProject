@@ -1,0 +1,33 @@
+<div class="container">
+<div class="card mt-5" style="align-items: center;">
+    <h1> Calcule de la durée</h1>
+  
+  </div>
+  <div class="card mt-5" >
+<form #calculdForm="ngForm" (ngSubmit)="calculd(calculdForm)">
+
+    <div class="form-group">
+      <label for ="name"> Capital :</label>
+      <input type="text"  #c (ngModel) = "c" name="c" id="c" class="form-control" placeholder="montant du crédit">
+     </div>
+     <div class="form-group">
+      <label for ="name"> Annuite :</label>
+      <input type="text"  #a (ngModel) = "a" name="a" id="a" class="form-control" placeholder="annuite">
+     </div>
+     <div class="form-group">
+      <label for ="name"> Taux :</label>
+      <input type="text"  #t (ngModel) = "t" name="t" id="t" class="form-control" placeholder="taux du crédit">
+     </div>
+     
+     <div class="form-group">
+      <input type="submit" value="Calculer" class="btn btn-primary w-100" style="margin-top:4% ;">
+     </div>
+  
+  </form>
+  </div>
+  
+  <div class="card mt-5" style="align-items: center;" *ngIf="message">
+  <h1> Votre Durée = {{resultD}}</h1>
+  
+  </div>
+</div>

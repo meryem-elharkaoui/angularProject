@@ -1,0 +1,15 @@
+.container{
+width: 70%;
+border: 1px ;
+
+height: auto;
+
+}
+.btn-primary{
+    background-color:black;
+    border-color: black;
+}
+
+.card{
+    padding: 2%;
+}

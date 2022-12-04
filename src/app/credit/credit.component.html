@@ -1,0 +1,58 @@
+<div class="container">
+<div class="card mt-5" style="align-items: center;">
+    <h1> Enregistrement du credit</h1>
+
+</div>
+<div class="card mt-5" >
+
+  <form #registerForm="ngForm" (ngSubmit)="register(registerForm)">
+     <div class="form-group">
+         <label for ="name"> Nom :</label>
+         <input type="text" #nomCli (ngModel) = "nomCli" name="nomCli" id="nomCli" class="form-control" placeholder="Nom du client" autocomplete="off">
+     </div>
+
+     <div class="form-group"> 
+         <label for ="name"> Adresse :</label>
+         <input type="text" #adrCli (ngModel) = "adrCli" name="adrCli" id="adrCli" class="form-control" placeholder="Adresse du client" autocomplete="disabled">
+      </div>  
+
+      <div class="form-group">
+         <label for ="name"> Ville :</label>
+         <input type="text" #vilCli (ngModel) = "vilCli" name="vilCli" id="vilCli" class="form-control" placeholder="ville du client" autocomplete="disabled">
+      </div> 
+
+         <div class="form-group">
+         <label for ="name"> Email :</label>
+         <input type="text" #mailCli (ngModel) = "mailCli" name="mailCli" id="mailCli" class="form-control" placeholder="mail du client" autocomplete="disabled">
+         </div>
+
+         <div class="form-group">
+         <label for ="name"> Téléphone :</label>
+         <input type="text"  #telCli (ngModel) = "telCli" name="telCli" id="telCli" class="form-control" placeholder="Téléphone du client" autocomplete="disabled">
+        </div>
+
+        
+
+      <div class="form-group">
+          <label for ="name"> Capital :</label>
+          <input type="text"  #monCre (ngModel) = "monCre" name="monCre" id="monCre" class="form-control" placeholder="montant du crédit" autocomplete="disabled">
+         </div>
+         <div class="form-group">
+          <label for ="name"> Taux :</label>
+          <input type="text"  #tauCre (ngModel) = "tauCre" name="tauCre" id="tauCre" class="form-control" placeholder="taux du crédit" autocomplete="disabled">
+         </div>
+         <div class="form-group">
+          <label for ="name"> Durée :</label>
+          <input type="text"  #durCre (ngModel) = "durCre" name="durCre" id="durCre" class="form-control" placeholder="durée en mois" autocomplete="disabled">
+         </div>
+        
+        <div class="form-group">
+          <input type="submit" value="Register" class="btn btn-primary w-100" style="margin-top:4% ;">
+         </div>
+    
+         
+  
+  </form>
+  </div>
+  <p> </p>
+</div>

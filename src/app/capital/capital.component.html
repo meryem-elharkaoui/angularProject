@@ -1,0 +1,34 @@
+ <div class="container">
+<div class="card mt-5" style="align-items: center;">
+    <h1> Calcule du capital </h1>
+  
+  </div>
+  <div class="card mt-5" >
+  
+  <form #calculcForm="ngForm" (ngSubmit)="calculc(calculcForm)">
+  
+    <div class="form-group">
+      <label for ="name"> Annuite :</label>
+      <input type="text"  #a (ngModel) = "a" name="a" id="a" class="form-control" placeholder="montant d'annuité">
+     </div>
+     <div class="form-group">
+      <label for ="name"> Durée :</label>
+      <input type="text"  #n (ngModel) = "n" name="n" id="n" class="form-control" placeholder="durée en mois">
+     </div>
+     <div class="form-group">
+      <label for ="name"> Taux :</label>
+      <input type="text"  #t (ngModel) = "t" name="t" id="t" class="form-control" placeholder="taux du crédit">
+     </div>
+     
+     <div class="form-group">
+      <input type="submit" value="Calculer" class="btn btn-primary w-100" style="margin-top:4% ;">
+     </div>
+  
+  </form>
+  </div>
+  
+  <div class="card mt-5" style="align-items: center;" *ngIf="message">
+  <h1> Votre capitale  = {{resultC}}</h1>
+  
+  </div>
+</div>
